@@ -24,4 +24,15 @@ public class UserService {
 		// TODO Auto-generated method stub
 		userRepository.deleteById(userId);
 	}
+
+
+
+	public void updateUser(Long userId, UserDto userDto) {
+		User user = userRepository.getOne(userId);
+		user.setFullname(userDto.getFullname());
+		user.setEmail(userDto.getEmail());
+		user.setUsername(userDto.getUsername());
+		userRepository.save(user);
+		
+	}
 }
