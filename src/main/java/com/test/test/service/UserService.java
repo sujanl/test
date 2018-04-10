@@ -19,4 +19,9 @@ public class UserService {
 		user.setEmail(userDto.getEmail());
 		userRepository.save(user);
 	}
+
+	public void deleteUser(Long userId) {
+		// TODO Auto-generated method stub
+		userRepository.deleteById(userId);
+	}
 }
