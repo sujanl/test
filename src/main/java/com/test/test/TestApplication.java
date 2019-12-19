@@ -9,8 +9,6 @@ public class TestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TestApplication.class, args);
 	}
-//example for commit.
-	//Thanks.
-	//learning to push in git
+
 }
-	//afkadfadsfksdjfjasfkadsjlkgsdfgdsgds
+	
